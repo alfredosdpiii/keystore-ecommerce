@@ -3,11 +3,12 @@
 import { db } from "@/server";
 
 export default async function getPosts() {
-  const posts = await db.query.posts.findMany();
+  const data = await db.query.posts.findMany();
 
-  if (!posts) {
+  if (!data) {
     return { error: "No posts found" };
   }
+  console.log(data);
 
-  return { success: posts };
+  return { success: data };
 }
