@@ -1,6 +1,6 @@
 export default function Logo() {
   return (
-    <div className="w-24 h-24">
+    <div className="w-24 h-24 flex items-center">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
         <g transform="rotate(-10, 80, 75)">
           <path

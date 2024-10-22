@@ -11,10 +11,10 @@ export default async function Nav() {
   return (
     <header className="py-8">
       <nav>
-        <ul className="flex justify-between">
+        <ul className="flex justify-between items-center">
           <li>
-            <Link href={"/"}>
-              <Logo className="w-5 h-6" />
+            <Link href={"/"} className="flex gap-2 items-center">
+              <Logo /> <p>KeyStore</p>
             </Link>
           </li>
           {!session ? (
