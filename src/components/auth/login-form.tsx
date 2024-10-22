@@ -80,7 +80,9 @@ export const LoginForm = () => {
             <Button size={"sm"} variant={"link"} asChild>
               <Link href="/auth/reset">Forgot your password?</Link>
             </Button>
-            <Button type="submit">Login</Button>
+            <Button type="submit" className="mb-4">
+              Login
+            </Button>
           </form>
         </Form>
       </div>
